@@ -1,0 +1,70 @@
+
+
+colletion:
+
+there 4 types of collections in python. they are list, tuple, set and dictionary
+
+check the following characteristics in every collection datatype
+
+1.whether it follows dynamic memory allocation or not
+2. different datatypes are supported or not supported
+3. duplicate values are supported or not supported
+4. sorting is supported by default
+5. mutable or immutable
+6. ordered collection or unordered collection
+7. support index or not
+
+
+LIST
+------
+
+1.whether it follows dynamic memory allocation or not  - yes
+2. different datatypes are supported or not supported  - yes
+3. duplicate values are supported or not supported  - yes
+4. sorting is supported by default  - no
+5. mutable or immutable  - mutable
+6. ordered collection or unordered collection  - ordered collection
+7. support index or not  - yes
+
+
+
+TUPLE
+------
+
+1.whether it follows dynamic memory allocation or not  - NO
+2. different datatypes are supported or not supported  - yes
+3. duplicate values are supported or not supported  - yes
+4. sorting is supported by default  - no
+5. mutable or immutable  - immutable
+6. ordered collection or unordered collection  - ordered collection
+7. support index or not  - yes
+
+
+dictionary
+----------
+
+1.whether it follows dynamic memory allocation or not  - yes
+2. different datatypes are supported or not supported  - yes
+3. duplicate values are supported or not supported  -> key-no, value-yes
+4. sorting is supported by default  - no
+5. mutable or immutable  - mutable
+6. ordered collection or unordered collection  - ordered collection
+7. support index or not  - no
+
+
+set
+----
+(add,remove)
+1. whether it follows dynamic memory allocation or not  - yes
+2. different datatypes are supported or not supported  - yes
+3. duplicate values are supported or not supported  - no
+4. sorting is supported by default  - no
+5. mutable or immutable  - mutable
+6. ordered collection or unordered collection  - unordered collection
+7. support index or not  - no
+
+
+
+
+
+
