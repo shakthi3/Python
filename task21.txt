@@ -1,0 +1,105 @@
+Inheritance
+         Inheritance is the process by which one class called the child or derived class acquires the one properties and method of another class called the parent or base class.
+
+Inheritance Types
+Single
+Multiple
+Multilevel
+Hierarchical Inheritance
+Hybrid Inheritance
+
+1.Single Inheritance
+     One child class inherits from one parent class.
+
+class Shop:
+     def Phone(self):
+         print("Phone")
+
+class Things(Shop):
+     def Laptop(self):
+         print("Laptop")
+
+Store=ShopThings()
+Store.Phone()
+Store.Laptop()
+
+2.Multiple Inheritance
+      One child inherits from more than one parent class
+
+class Father:
+    def money(self):
+        print("Father's money")
+class Mother:
+     def house(self):
+         print("Mother's House")
+class Child(Father,Mother):
+     pass
+
+c=Child()
+c.money()
+c.house()
+
+3.Multilevel Inheritance
+   Inheritance happens in multiple levels
+
+class Grandfather:
+    def house(self):
+       print("Grandfather's house")
+
+class Father(Grandfather):
+    def car(self):
+       print("Father's car")
+
+class Son(Father):
+    def bike(self):
+       print("Son's Bike")
+
+s=Son()
+s.house()
+s.car()
+s.bike()
+
+4.Hierarchical Inheritance
+    Multiple child classes inherit from the same parent class
+
+class Animal:
+    def eat(self):
+       print("Eating")
+class Dog(Animal):
+    def bark(self):
+        print("Barking")
+class Cat(Animal):
+     def meow(self):
+        print("Meowing")
+
+d=Dog()
+d.eat()
+d.bark()
+
+c=Cat()
+c.eat()
+c.meow()
+
+5.Hybrid Inheritance
+     Combination of two or more types of inheritance.
+
+class Animal:
+    def eat(self):
+       print("Eating")
+
+class Dog(Animal):
+    def bark(self):
+       print("Barking")
+
+class Cat(Animal):
+    def moew(self):
+       print("Meowing")
+
+class Puppy(Dog,Cat):
+     pass
+
+
+p=Puppy()
+p.eat()
+p.bark()
+p.meow()
