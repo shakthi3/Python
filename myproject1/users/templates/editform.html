@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="editrecordprocess/" method="post">
+      {% csrf_token %}
+      <input type="text" name="text1" value="{{record.id}}" />
+      <input type="text" name="text2" value="{{record.username}}" />
+      <input type="text" name="text3" value="{{record.password}}" />
+
+      <input type="submit" value="login" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="{% url 'addrecordform' %}">add record</a>
+    <table width="100%" border="2">
+      {% for x in userrecords %}
+      <tr>
+        <td>{{ x.id }}</td>
+
+        <td>{{ x.username }}</td>
+
+        <td>{{ x.password }}</td>
+        <td><a href="edit/{{x.id}}">edit</a></td>
+        <td><a href="delete/{{x.id}}">delete</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
